@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #434242;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.container {
+  width: 30%;
+  margin: 10% auto;
+}
+
+.mainclock {
+  color: #fff;
+  background-color: #227c70;
+  width: 100%;
+  height: 150px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#hours-min {
+  font-size: 60px;
+  margin-right: 10px;
+}
+
+#second-session {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.from_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  background-color: #e6ddc4;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input[type="number"],
+select {
+  width: 70px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #227c704c;
+  color: white;
+  text-align: center;
+}
+
+#add_alarm {
+  background-color: none;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 500px;
+}
+
+#alarm-list {
+  padding: 5px;
+  list-style: none;
+  width: 100%;
+
+  cursor: pointer;
+}
+
+.alarm-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  margin: 15px 0 0 0;
+  padding: 8px;
+  border-radius: 5px;
+  color: #0e5e6f;
+}
+
+.alarm-list-item:hover {
+  background-color: #4342422c;
+}
+
+.delete {
+  background-color: transparent;
+  color: red;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}

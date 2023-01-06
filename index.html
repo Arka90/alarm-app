@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Alarm Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="mainclock">
+        <div id="hours-min">10:45</div>
+        <div id="second-session">
+          <div id="display-session">PM</div>
+          <div id="second">12</div>
+        </div>
+      </div>
+      <div class="from_list">
+        <form action="#">
+          <input
+            min="0"
+            max="12"
+            type="number"
+            name="hh"
+            id="hh"
+            placeholder="HH"
+          />
+          <span>:</span>
+          <input
+            min="0"
+            max="60"
+            type="number"
+            name="mm"
+            id="mm"
+            placeholder="MM"
+          />
+          <span>:</span>
+
+          <input
+            min="0"
+            max="60"
+            type="number"
+            name="ss"
+            id="ss"
+            placeholder="SS"
+          />
+          <select name="session" id="session">
+            <option value="">select</option>
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+          </select>
+          <button id="add_alarm"><i class="fa-solid fa-plus"></i></button>
+        </form>
+
+        <ul id="alarm-list">
+          <!-- <li class="alarm-list-item" id="1236454586">
+            <p>10:45:00 PM</p>
+            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/15628b64e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
